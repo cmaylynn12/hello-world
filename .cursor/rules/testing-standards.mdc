@@ -1,0 +1,34 @@
+---
+description: Testing standards using Vitest and React Testing Library
+globs: **/*.{test,spec}.{js,jsx}
+alwaysApply: false
+---
+
+# Intent
+Write tests that validate behavior and protect refactors.
+
+# Testing principles
+- Test behaviour, not implementation details
+- Keep tests focused and easy to understand
+- Prefer fewer, meaningful tests over many shallow ones
+
+# Component tests
+- Test what the user sees and does
+- Use queries that reflect real user interactions
+- Cover key states: loading, success, empty, and error where relevant
+- Avoid relying on internal state or private functions
+
+# Utility tests
+- Use table-driven tests for branching logic
+- Include edge cases and invalid inputs where relevant
+
+# Structure
+- Arrange, act, and assert clearly
+- Keep setup minimal and relevant to the test
+- Use descriptive test names that explain expected behaviour
+
+# Avoid
+- Over-mocking or testing implementation details
+- Fragile assertions tied to structure instead of behaviour
+- Large test setups that are hard to follow
+- Snapshot-heavy tests for dynamic UI

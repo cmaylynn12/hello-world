@@ -1,0 +1,45 @@
+---
+description: Global engineering standards for frontend code
+alwaysApply: true
+---
+
+# Intent
+Produce frontend code that is clear, maintainable, and resilient, with an emphasis on predictable behavior and ease of change.
+
+# Priorities
+1. Readability over cleverness
+2. Correctness over premature optimization
+3. Simplicity before abstraction
+4. Explicit behavior over implicit magic
+
+# General principles
+- Make the smallest change that fully solves the problem.
+- Prefer straightforward implementations over layered abstractions.
+- Keep functions and components focused on a single responsibility.
+- Avoid hidden side effects and implicit state changes.
+- Structure code so that it is easy to scan and understand quickly.
+
+# Architecture
+- Separate rendering logic from business logic.
+- Prefer composition over deeply nested prop passing.
+- Extract reusable logic into hooks or utilities when it becomes meaningful.
+- Keep dependencies minimal and intentional.
+
+# JavaScript practices
+- Use clear, descriptive variable and function names.
+- Keep function inputs and outputs predictable.
+- Avoid deeply nested logic; extract helpers where needed.
+- Use early returns to reduce branching complexity.
+- Validate assumptions at boundaries when necessary (e.g. API data).
+
+# Code quality expectations
+- Names should clearly convey intent.
+- Handle edge cases explicitly where relevant.
+- Keep files cohesive and logically structured.
+- Remove unused code, imports, and stale comments.
+
+# Avoid
+- Over-engineering simple problems
+- Large multi-purpose modules
+- Implicit data flow or hidden mutations
+- Adding dependencies without clear benefit

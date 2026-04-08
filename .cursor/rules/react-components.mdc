@@ -1,0 +1,52 @@
+---
+description: Standards for React components and hooks
+globs: src/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Intent
+Build React components that are composable, predictable, and easy to maintain.
+
+# Components
+- Prefer function components
+- Keep components focused on a single responsibility
+- Extract smaller components when jsx becomes deeply nested
+- Use clear and descriptive prop names
+- Prefer early returns for conditional rendering (loading, error, empty)
+
+# State management
+- Keep state minimal and derive values where possible
+- Avoid duplicating sources of truth
+- Keep state close to where it is used
+- Introduce shared or global state only when absolutely necessary
+
+# Hooks
+- Extract hooks for reusable or complex logic
+- Keep hooks focused and predictable
+- Avoid mixing unrelated concerns within a single hook
+
+# Effects
+- Use effects only for synchronisation with external systems
+- Do not use effects for values that can be derived during render
+- Keep dependencies accurate and intentional
+
+# Rendering
+- Keep jsx shallow and readable
+- Avoid inline complexity inside jsx; extract helpers if needed
+- Prefer declarative patterns over imperative ones
+
+# Props
+- Treat props as immutable
+- Provide sensible defaults where appropriate
+- Guard against missing or invalid data where necessary
+
+# Performance
+- Do not optimise prematurely
+- Add memoisation only when there is a clear rendering or identity issue
+- Prefer simpler code over speculative optimisations
+
+# Avoid
+- Large components with mixed responsibilities
+- Excessive prop drilling without considering composition
+- Overusing useEffect
+- Premature memoisation

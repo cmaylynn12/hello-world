@@ -1,0 +1,34 @@
+---
+description: Accessibility and UI standards
+globs: src/**/*.{js,jsx}
+alwaysApply: false
+---
+
+# Intent
+Ensure UI is accessible, resilient, and communicates state clearly.
+
+# Accessiblity
+- Prefer semantic HTML elements
+- Use native controls before introducing ARIA roles
+- Ensure interactive elements have accessible names
+- Maintain keyboard accessibility and visible focus states
+- Ensure images have alt attribute included to convey meaning
+
+# UI states
+- Handle loading, empty, error, and success states explicitly
+- Avoid ambiguous or missing states
+- Provide clear user feedback
+
+# Forms
+- Associate labels with inputs
+- Surface validation clearly and consistently
+- Do not rely solely on colour to convey meaning
+
+# Interaction
+- Ensure clickable elements are appropriate semantic elements
+- Avoid non-interactive elements with click handlers unless necessary
+
+# Avoid
+- Missing labels or inaccessible controls
+- Hidden or unclear state transitions
+- UI that relies solely on visual cues without semantic meaning

@@ -1,0 +1,58 @@
+---
+alwaysApply: true
+---
+
+# Intent
+Maintain consitent and predictable file naming to improve discoverability and readability
+
+# General
+- Use consistent nameing across the codebase
+- File names should reflect the primary export or responsibility
+- Avoid abbreviations unless they are widely understood
+
+# Components
+- Use PascalCase for component files
+- Match the component name to the file name
+
+Examples:
+- `UserCard.jsx`
+- `TodoList.jsx`
+
+# Hooks
+- Use camelCase and prefix with `use`
+- Name should describe the behaviour or responsibility
+
+Examples:
+- `useFetchTodos.js`
+- `useDebounce.js`
+
+# Utilities
+- Use camelCase
+- Name based on action or transformation
+
+Examples:
+- `formatDate.js`
+- `groupBy.js`
+
+# Test files
+- Mirror the source file name
+- Use `.test.js` or `.spec.js`
+
+Examples:
+- `UserCard.test.jsx`
+- `useFetchTodos.test.js`
+
+# Folders
+- Use consistent convention (kebab-case or PascalCase)
+- Group by feature or domain when appropriate
+
+Examples:
+- `components/`
+- `hooks/`
+- `utils/`
+- `features/todos/`
+
+# Avoid
+- Inconsistent case across similar files
+- Generic names like `helpers.js` or `utils.js`
+- Multiple unrelated exports in a single file
