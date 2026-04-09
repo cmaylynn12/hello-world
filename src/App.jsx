@@ -1,17 +1,8 @@
 import './App.css'
+import HelloWorld from './components/HelloWorld'
 
 function App() {
-
-  return (
-    <>
-      <section id="center">
-        <h1>Hello World! :D</h1>
-      </section>
-      <div className="ticks"></div>
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+  return <HelloWorld />
 }
 
 export default App
